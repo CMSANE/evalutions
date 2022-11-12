@@ -1,0 +1,20 @@
+ /* Style du formulaire */
+#Payment{
+    margin-top: 50px;
+}
+
+.images{
+    width: 50px;
+    height: 50PX;
+}
+.inlineimage{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+.images{
+  display: inline-block;
+  width: 20%;
+  margin: 1%;
+}
