@@ -1,3 +1,4 @@
+/* Début Partie Général */
 html,
 body {
   margin: 0;
@@ -7,75 +8,68 @@ h1{
     text-decoration: underline;
     text-align:center;
 }
-
 p{
 letter-spacing: 0.01em;
 line-height: 1.8em;
 font-size: 2em;
 }
+#apropos, #services, #contact{
+  margin: 0.5em;
+  padding-top: 80px;
+}
+#accueil a, #apropos a, #services a{
+font-family: sans-serif;
+text-decoration: none;
+color: rgb(245, 238, 238);
+border: 2px solid #333;
+letter-spacing: 2px;
+text-align: center;
+position: relative;
+transition: all .35s;
+background-color: rgb(7, 6, 6);
+}
+#accueil a span, #apropos a span, #services a span{
+  position: relative;
+  z-index: 2;
+}
+#accueil  a:after, #apropos a:after, #services a:after{
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: white;
+  transition: all .40s;
+}
+#accueil a:hover, #apropos a:hover, #services a:hover{
+  color: rgb(5, 1, 1);
+}
+#accueil a:hover:after,  #apropos a:hover:after, #services a:hover:after{
+  width: 100%;
+}
+/*fin bouton reserver*/
+/* Fin Partie Général */
 
-  
+/* Début Partie Accueil */
 /*bouton reserver*/
 .boutton1{
   position:relative;
   margin-top: 5%;
-  margin-left: 45%;
 }
-
-  #accueil a{
-    display: block;
-    width: 120px;
-    line-height: 40px;
-    font-size: 20px;
-    font-family: sans-serif;
-    text-decoration: none;
-    color: rgb(245, 238, 238);
-    border: 0px solid #333;
-    letter-spacing: 2px;
-    text-align: center;
-    position: relative;
-    transition: all .35s;
-    background-color: rgb(7, 6, 6);
-  }
-  
-  #accueil a span{
-    position: relative;
-    z-index: 2;
-  }
-  
-  #accueil  a:after{
-    position: absolute;
-    content: "";
-    top: 0;
-    left: 0;
-    width: 0;
-    height: 100%;
-    background: white;
-    transition: all .40s;
-  }
-  
-  #accueil a:hover{
-    color: rgb(5, 1, 1);
-  }
-  
-  #accueil a:hover:after{
-    width: 100%;
-  }
- 
-  /*partie media du nav and entete*/
-
+  /*partie entete*/
     header.entete {
-      padding-top: 10rem;
-      padding-bottom: 30rem;
+      padding-top: 7rem;
+      padding-bottom: 20rem;
       text-align: center;
       color: rgb(7, 1, 1);
-      background-image: url("../customer.jpg");
+      background-image: url("../images/Images-Accueil.jpg");
       background-repeat: no-repeat;
       background-attachment: scroll;
       background-position: center center;
       background-size: cover;
     }
-  
+      /*partie du sous-titre*/
       header.entete .sous-titre {
         font-size: 3rem;
         font-style: italic;
@@ -83,6 +77,7 @@ font-size: 2em;
         margin-top: 4rem;
         padding-top: 10rem;
       }
+      /*partie du titre*/
       header.entete .titre {
         font-size: 4rem;
         font-weight: 900;
@@ -90,21 +85,19 @@ font-size: 2em;
         margin-top: 2rem;
         padding-top: 2rem;
       }
-
+      /*Media queries de l'accueil*/
       @media screen and (max-width: 800px) {
         .boutton1{
           position:relative;
           margin-top: 15%;
-          margin-left: 36%;
         }
         
         header.entete {
           padding-bottom: 20rem;
           text-align: center;
           color: rgb(7, 1, 1);
-          background-image: url("../53807.jpg");
+          background-image: url("/images/Images-Accueil.jpg");
         }
-      
           header.entete .sous-titre {
             font-size: 1.9rem;
             font-style: italic;
@@ -121,10 +114,9 @@ font-size: 2em;
             padding-top: 4rem;
           }
 }
-/** fin section à entete **/
+/** fin section Accueil**/
 
-
-/** about section à propos **/
+/** Début section à propos **/
 #apropos h1{
   margin-top: 50px;
   font-size: 3em;
@@ -132,70 +124,25 @@ font-size: 2em;
   text-decoration: underline;
   text-align:center;
 }
-
-#apropos, #services, #contact{
-  margin-top: 0.5em;
-  padding: 80px;
-  background-color: #00E676;
-}
-
 .imageabout{
   width: 370px;
-  height: 500px;
+  height: 450px;
   border-radius: 2em;
 }
-
 .texte{
   font-size: 2rem;
   text-align: center;
 }
-
-
-/* button à plus d'info */
+/* button plus d'infos */
 .boutton2{
   position:relative;
-  margin-top: 10%;
+  margin-top: 5%;
   margin-left: 40%;
 }
-
-#apropos a{
-  line-height: 40px;
-  font-size: 18px;
-  font-family: sans-serif;
-  text-decoration: none;
-  color: rgb(245, 238, 238);
-  border: 2px solid #333;
-  letter-spacing: 2px;
-  text-align: center;
-  position: relative;
-  transition: all .35s;
-  background-color: rgb(7, 6, 6);
+#apropos p{
+  margin-top: 5%;
 }
-
-#apropos a span{
-  position: relative;
-  z-index: 2;
-}
-
-#apropos  a:after{
-  position: absolute;
-  content: "";
-  top: 0;
-  left: 0;
-  width: 0;
-  height: 100%;
-  background: white;
-  transition: all .40s;
-}
-
-#apropos a:hover{
-  color: rgb(5, 1, 1);
-}
-
-#apropos a:hover:after{
-  width: 100%;
-}
-
+/* Media queries de à propos */
 @media screen and (max-width: 800px) {
   .boutton2{
     position:relative;
@@ -210,33 +157,26 @@ font-size: 2em;
     font-size: 2.5em;
     line-height: 1.2em;
   }
-  
   #apropos{
     display: flex;
     justify-content: center;
   }
-  
   .imageabout{
     width: 300px;
     height: 300px;
     margin-top: 5%;
   }
-  
   .texte{
     font-size: 1.5rem;
   }
-
 }
+/** fin section à propos **/
 
-/** fin about section à propos **/
 
-
-/**debut services section **/
-
+/**debut section services **/
 #services h1{
-  font-size: 4em;
-  line-height: 1.9em;
-  
+  font-size: 3em;
+  line-height: 1.2em;
 }   
 .choix{
   color:#030211;
@@ -244,47 +184,11 @@ font-size: 2em;
   font-weight:600px;
   font-size:2em;
 }
-
 .heure, .plan { 
   font-size:2em;
 }
-/* Boutton général reserver du services */
-#services a{
-  font-family: sans-serif;
-  text-decoration: none;
-  color: rgb(245, 238, 238);
-  border: 2px solid #333;
-  letter-spacing: 2px;
-  text-align: center;
-  position: relative;
-  transition: all .35s;
-  background-color: rgb(7, 6, 6);
-}
 
-#services a span{
-  position: relative;
-  z-index: 2;
-}
-
-#services a:after{
-  position: absolute;
-  content: "";
-  top: 0;
-  left: 0;
-  width: 0;
-  height: 100%;
-  background: white;
-  transition: all .40s;
-}
-
-#services a:hover{
-  color: rgb(5, 1, 1);
-}
-
-#services a:hover:after{
-  width: 100%;
-}
-
+/** partie média du contact **/
 @media screen and (max-width: 800px) {
   #services h1{
     margin-top: 2px;
@@ -292,74 +196,32 @@ font-size: 2em;
     line-height: 1.2em;
    padding-bottom: 5%;
   }
-  
 }
+/**debut section services **/
 
   /** début section contact **/
-
 #contact h1{
-  font-size: 60px;
-  line-height: 1.1em;
+  font-size: 3em;
+  line-height: 1.2em; 
 }  
-
-.btn4{
+.boutton3{
   position:relative;
-  top: 20%;
-  left: 90%;
-  transform: translate(-50%, -50%);
+  top: 100%;
+  left: 45%;
 }
-
 #contact button{
   display: block;
   top: 2em;
-  width: 150px;
-  height: 40px;
-  line-height: 30px;
-  font-size: 18px;
-  font-family: sans-serif;
-  text-decoration: none;
-  color: rgb(245, 238, 238);
-  border: 2px solid #333;
-  letter-spacing: 2px;
-  text-align: center;
-  position: relative;
-  transition: all .35s;
-  background-color: rgb(7, 6, 6);
 }
-
-#contact button span{
-  position: relative;
-  z-index: 2;
-}
-
-#contact button:after{
-  position: absolute;
-  content: "";
-  top: 0;
-  left: 0;
-  width: 0;
-  height: 100%;
-  background: white;
-  transition: all .40s;
-}
-
-#contact button:hover{
-  color: rgb(5, 1, 1);
-}
-
-#contact button:hover:after{
-  width: 100%;
-}
-
+/* Partie média du contact */
 @media screen and (max-width: 800px) {
   #contact {
     margin-bottom: 1em; 
-    background-color: #00E676;
   }
-  .btn4{
+  .boutton3{
     position:relative;
     margin-top: 10%;
-    margin-left: -25%;
+    margin-left: -15%;
 }
 #contact  h1{
   margin-top: 2px;
@@ -367,19 +229,20 @@ font-size: 2em;
   line-height: 1.2em;
 }
 }
-/*Partie footer*/
+/* Fin partie contact */
+
+/*début Partie footer*/
 #Réseaux {
   text-align: center;
   line-height: 2.5em;
   padding: 10px;
-  background-color: #00E676;
-  
 }
 #Réseaux h2 {
   text-decoration: underline;
   color: rgb(8, 5, 5);
-  font-size: 2.4em;
+  font-size: 3em;
   text-align: center;
+
 }
 
 #Réseaux li {
@@ -416,9 +279,9 @@ font-size: 2em;
   font-size: 1.2em;
   text-align: center;
 }
-    
+  /* Media queries du footer */
 @media screen and (max-width: 800px) {
-#Reseau  h2{
+#Réseaux  h2{
   margin-top: 2px;
   font-size: 2.5em;
   line-height: 1.2em;
